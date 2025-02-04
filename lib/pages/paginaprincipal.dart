@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:proyectoappbarcos/components/appbar.dart';
+import 'package:proyectoappbarcos/components/drawerpers.dart';
 
-class Paginaprincipal extends StatefulWidget {
+class Paginaprincipal extends StatelessWidget {
   const Paginaprincipal({super.key});
 
   @override
-  State<Paginaprincipal> createState() => _PaginaprincipalState();
-}
-
-class _PaginaprincipalState extends State<Paginaprincipal> {
-  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppbarP(),
+      endDrawer: Drawerpers(),
+    );
   }
 }
