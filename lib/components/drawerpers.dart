@@ -24,16 +24,14 @@ class Drawerpers extends StatelessWidget {
               leading: const Icon(Icons.home),
               title: const Text('Reservas'),
               onTap: () {
-                // Acción cuando se selecciona "Inicio"
-                Navigator.of(context).pop(); // Cierra el Drawer
+                Navigator.of(context).pop(); 
               },
             ),
             ListTile(
               leading: const Icon(Icons.logout),
               title: const Text('Volver al menú'),
               onTap: () {
-                // Acción cuando se selecciona "Cerrar sesión"
-                Navigator.of(context).pop(); // Cierra el Drawer
+                Navigator.of(context).pop(); 
               },
             ),
           ],

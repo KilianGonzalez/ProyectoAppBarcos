@@ -6,8 +6,12 @@ class AppbarP extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: const Color.fromARGB(255, 137, 191, 236), // Cambia el color del fondo
-      toolbarHeight: 100.0, // Aumenta el tamaño del AppBar
+      backgroundColor: const Color.fromARGB(255, 137, 191, 236), 
+      toolbarHeight: 100.0,
+      iconTheme: const IconThemeData(
+        color: Colors.white, 
+        size: 40,
+      ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
