@@ -16,7 +16,7 @@ class AppbarP extends StatelessWidget implements PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ClipOval(
-            child: Image.asset('lib/assets/logo.png', height: 80, width: 80, fit: BoxFit.cover),
+            child: Image.asset("lib/assets/logo.png", height: 80, width: 80, fit: BoxFit.cover),
           ),
           const Text('NaviLux', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 60, color: Colors.white)),
           const SizedBox(width: 1,)
