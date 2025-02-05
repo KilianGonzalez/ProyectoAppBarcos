@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyectoappbarcos/pages/paginareservas.dart';
 
 class Drawerpers extends StatelessWidget {
   const Drawerpers({super.key});
@@ -24,14 +25,9 @@ class Drawerpers extends StatelessWidget {
               leading: const Icon(Icons.home),
               title: const Text('Reservas'),
               onTap: () {
-                Navigator.of(context).pop(); 
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.logout),
-              title: const Text('Volver al menú'),
-              onTap: () {
-                Navigator.of(context).pop(); 
+                Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const Paginareservas()),
+              );
               },
             ),
           ],
