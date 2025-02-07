@@ -10,14 +10,14 @@ class Paginaprincipal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       //Appbar
-      appBar: AppbarP(),
-      endDrawer: Drawerpers(),
+      appBar: const AppbarP(),
+      endDrawer: const Drawerpers(),
       
       backgroundColor: Colors.blue[100],
       body: ListView(
         children: [
           //Container con imagen
-          Container(
+          SizedBox(
             width: double.infinity,
             child: Image.asset(
               "lib/assets/fondopagprin.jpg",
