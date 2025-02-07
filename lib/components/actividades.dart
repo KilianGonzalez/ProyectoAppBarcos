@@ -5,7 +5,7 @@ class Actividades extends StatelessWidget {
   final String rutafoto;
   final String textoboton; 
 
-  Actividades({
+  const Actividades({
     super.key,
     required this.rutafoto,
     required this.textoboton,  
@@ -52,7 +52,7 @@ class Actividades extends StatelessWidget {
             child: Text(
               textoboton,
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
                 fontSize: 24,
