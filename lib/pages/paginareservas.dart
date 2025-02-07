@@ -18,8 +18,8 @@ class _PaginareservasState extends State<Paginareservas> {
       backgroundColor: Colors.blue[100],
 
       //appbar
-      appBar: AppbarP(),
-      endDrawer: Drawerpers(),
+      appBar: const AppbarP(),
+      endDrawer: const Drawerpers(),
 
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start, 
@@ -30,15 +30,6 @@ class _PaginareservasState extends State<Paginareservas> {
             color: const Color.fromARGB(255, 92, 151, 240), 
             margin: const EdgeInsets.all(8), 
             child: const Center(child: Text("Reservas", style: TextStyle(color: Colors.white, fontSize: 80))),
-          ),
-          Container(
-            height: 100,
-            color: const Color.fromARGB(255, 92, 151, 240), 
-            child: ItemTarea(
-              textotarea: textotarea, 
-              valorCheckbox: valorCheckbox, 
-              cambiaValorCheckbox: cambiaValorCheckbox, 
-              borrarTarea: borrarTarea),
           ),
         ],
       ),
