@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
-class ItemTarea extends StatelessWidget {
-  final String textotarea;
+class ItemReserva extends StatelessWidget {
+  final String textores;
+  final String textoact;
   final bool valorCheckbox;
   final Function(bool?)? cambiaValorCheckbox;
-  final Function(BuildContext)? borrarTarea;
+  final Function(BuildContext)? borrarReserva;
 
-  const ItemTarea({
+  const ItemReserva({
     super.key,
-    required this.textotarea,
+    required this.textores,
+    required this.textoact,
     required this.valorCheckbox,
     required this.cambiaValorCheckbox,
-    required this.borrarTarea,
+    required this.borrarReserva,
     });
 
   @override
@@ -27,13 +29,13 @@ class ItemTarea extends StatelessWidget {
               icon: Icons.delete,
               backgroundColor: Colors.red,
               borderRadius: BorderRadius.circular(10),
-              onPressed: borrarTarea,
+              onPressed: borrarReserva,
             ),
           ]
         ),
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.teal[300],
+            color: Colors.blue[300],
             borderRadius: BorderRadius.circular(10),
           ),
           child: Padding(
@@ -42,10 +44,10 @@ class ItemTarea extends StatelessWidget {
               children: [
                 // Checkbox
                 Checkbox(
-                  activeColor: Colors.teal[200],
-                  checkColor: Colors.green[800],
+                  activeColor: Colors.blue[200],
+                  checkColor: Colors.blue[800],
                   side: BorderSide(
-                    color: Colors.green[800]!,
+                    color: Colors.blue[800]!,
                     width: 2,
                   ),
                   value: valorCheckbox,
@@ -54,12 +56,25 @@ class ItemTarea extends StatelessWidget {
             
                 //Texto
                 Text(
-                  textotarea,
+                  textores,
                   style: TextStyle(
-                    color: Colors.green[800],
+                    color: Colors.white,
                     decoration: valorCheckbox ? TextDecoration.lineThrough : TextDecoration.none,
                     decorationColor: Colors.red,
                     decorationThickness: 4, 
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.only(left: 25),
+                  child: Text(
+                    textoact,
+                    style: TextStyle(
+                      color: Colors.white,
+                      decoration: valorCheckbox ? TextDecoration.lineThrough : TextDecoration.none,
+                      decorationColor: Colors.red,
+                      decorationThickness: 4, 
+                    ),
                   ),
                 ),
               ],
